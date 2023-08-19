@@ -38,5 +38,132 @@
       Bhaktapur<br />
       Nepal
     </address>
+
+    <div class="city">
+      <h1>Bhaktapur</h1>
+      <p>This is my city.</p>
+    </div>
+
+    <h1>My <span class="note">important</span> Heading</h1>
+
+    <style>
+      .city {
+        color: black;
+        background-color: beige;
+        margin: 20px;
+        padding: 5px;
+      }
+      .note {
+        font-size: 120%;
+        color: red;
+      }
+    </style>
+
+    <h2>use of the attributes in js</h2>
+    <p>Click the buttton</p>
+
+    <button onclick="myFunction()">Hide Elements</button>
+    <div class="city">
+      <h1 class="city">Bhaktapur</h1>
+      <p class="city">This is about my city bhaktapur</p>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementsByClassName("city");
+        for (var i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+      }
+    </script>
+
+    <div id="newID">
+      <h3>Hello Again Peoples..</h3>
+      <p>Nothing to write here please help me write some content here.hehe</p>
+      <button id="btn">Click Me</button>
+    </div>
+
+    <style>
+      #newID {
+        background-color: cadetblue;
+        color: antiquewhite;
+        padding: 25px;
+        margin: 10px;
+      }
+      #btn {
+        font-weight: 600;
+        background-color: #b6d9d8;
+        color: #112022;
+        height: 32px;
+        width: auto;
+        /* padding-left: 10px;
+        padding-top: 20px;
+        padding-right: 10px;
+        padding-bottom: 20px; */
+        border: none;
+        border-radius: 6px;
+        text-align: center;
+      }
+      #btn:hover {
+        font-weight: 600;
+        background-color: #89bfbf;
+        color: #294346;
+        height: 32px;
+        width: auto;
+        /* padding-left: 10px;
+        padding-top: 20px;
+        padding-right: 10px;
+        padding-bottom: 20px; */
+        border: none;
+        border-radius: 6px;
+        text-align: center;
+      }
+    </style>
+    <iframe
+      src="https://www.facebook.com"
+      title="k cha "
+      height="500px"
+      width="350px"
+    >
+    </iframe>
+    <div class="form">
+      <h4>User registration form here</h4>
+      <div>
+        <form action="POST">
+          <label for="fname">First Name</label>
+
+          <input type="text" id="fname" name="fname" />
+
+          <label for="lname">Last Name</label>
+
+          <input type="text" id="lname" name="lname" />
+          <br />
+          <br />
+
+          <input type="radio" id="radio" value="Bhaktapur" /><label
+            >Bhaktapur</label
+          ><br />
+
+          <input type="radio" id="radio" value="Kathmandu" /><label
+            >Kathmandu</label
+          ><br />
+
+          <input type="checkbox" id="vechicle" />
+          <label for="vechicle"> Bike</label><br />
+          <input type="checkbox" id="vechicle" />
+          <label for="vechicle"> Car</label><br />
+
+          <label for="dropdown">Select what you want to order</label>
+
+          <select id="dropdown" name="khaja">
+            <option value="momo">MOMO</option>
+            <option value="momo">Pizza</option>
+            <option value="momo">Burger</option>
+            <option value="momo">Cold Coffe</option>
+          </select>
+          <button id="btn">Submit</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
