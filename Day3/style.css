@@ -1,0 +1,13 @@
+.primary_div {
+  background-color: DodgerBlue;
+  font-size: small;
+  color: aquamarine;
+  font-family: Helvetica, sans-serif;
+  padding: 10px;
+}
+
+.primary_div:hover {
+  background-color: hsl(9, 100%, 64%);
+  padding: 10px;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
