@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="favicon" href="favicon.ico" />
+    <script>
+        var x = document.getElementById("demo");
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+        }
+        
+        function showPosition(position) {
+          x.innerHTML = "Latitude: " + position.coords.latitude +
+          "<br>Longitude: " + position.coords.longitude;
+        }
+        </script>
+  </head>
+  <body>
+    <button onclick="getLocation()">Try It</button>
+    <ul>
+      <li><data aria-valuetext=" Khanney kura"></data> MO:MO</li>
+      <li>Buff MO:MO</li>
+      <li>Burgers</li>
+    </ul>
+
+    <div
+      style="
+        background-color: beige;
+        margin: 20px;
+
+        padding-left: 10px;
+        padding-bottom: 10px;
+      "
+    >
+      <h1>Hello</h1>
+      <form action="# method="get">
+        <label>Choose any of them</label><br />
+        <input list="food" name="food" id="foods" />
+        <datalist id="foods">
+          <option value="MOMO">
+          <option value="Chaumin">
+          <option value="Not Intrested">
+        </datalist>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    
+    <div style="background-color: beige; padding-inline: 50px;">
+        <h1>Text Area</h1>
+        <Textarea  style="height: 100px; width: 50%;">write your message...</Textarea>
+    <br>
+        <button class="button">Send</button>
+
+    </div>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=nPVKHXumXP4" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </body>
+</html>

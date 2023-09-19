@@ -1,0 +1,111 @@
+.left {
+  background-color: aquamarine;
+  color: black;
+  height: 200px;
+  padding: 10px;
+  text-align: justify;
+  width: 25%;
+  float: left;
+}
+.Main {
+  background-color: cadetblue;
+  color: black;
+  height: 200px;
+  padding: 10px;
+  text-align: justify;
+  width: 50%;
+  float: left;
+}
+.right {
+  background-color: aquamarine;
+  color: black;
+  height: 200px;
+  padding: 10px;
+  text-align: justify;
+  width: 25%;
+  float: left;
+}
+
+/* 
+@media screen and (max-width: 800px) {
+  .left,
+  .Main,
+  .right {
+    width: (100%);
+  }
+} */
+
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: #333333;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px, 20px;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+}
+.menu li {
+  margin: 0;
+  align-items: end;
+}
+.menu a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.navbar {
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #333333;
+    width: 100%;
+    top: 60px;
+    left: 0;
+  }
+  .menu.active {
+    display: flex;
+  }
+  .Logo {
+    display: block;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.grid-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-item img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  height: auto; /* Maintain aspect ratio */
+}

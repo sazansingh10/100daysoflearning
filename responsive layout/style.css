@@ -1,0 +1,19 @@
+/*@import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))
+    url(images/bg.avif);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100vh;
+}
